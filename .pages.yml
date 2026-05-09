@@ -1,5 +1,5 @@
 content:
-  - name: "Configuración Inicio"
+  - name: "Editar Inicio"
     type: "single"
     path: "index.html"
     fields:
