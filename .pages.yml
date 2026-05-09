@@ -1,8 +1,8 @@
 content:
-  - name: "Página Principal"
+  - name: "Configuración Inicio"
     type: "single"
     path: "index.html"
     fields:
       - { name: "hero_title", label: "Título Principal", type: "string" }
-      - { name: "hero_sub", label: "Descripción", type: "text" }
-      - { name: "btn_order", label: "Texto Botón", type: "string" }
+      - { name: "hero_sub", label: "Descripción/Subtítulo", type: "text" }
+      - { name: "btn_text", label: "Texto del Botón", type: "string" }
