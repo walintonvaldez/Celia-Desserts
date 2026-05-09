@@ -1,6 +1,6 @@
 content:
   - name: "Configuración Inicio"
-    type: "collection"
+    type: "collections"
     path: "index.html"
     fields:
       - { name: "hero_title", label: "Título Principal", type: "string" }
