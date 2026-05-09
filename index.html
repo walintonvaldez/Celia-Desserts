@@ -52,7 +52,6 @@
     }
 
     /* NAVBAR */
-
     nav{
       position:sticky;
       top:0;
@@ -105,15 +104,10 @@
       font-weight:800;
       cursor:pointer;
       transition:0.25s ease;
-    }
-
-    .nav-btn:hover{
-      transform:translateY(-2px);
-      box-shadow:var(--shadow);
+      text-decoration: none;
     }
 
     /* HERO */
-
     .hero{
       padding:5rem 0;
     }
@@ -159,6 +153,8 @@
       font-weight:800;
       cursor:pointer;
       transition:0.25s ease;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .primary-btn{
@@ -170,12 +166,6 @@
       background:white;
       border:2px solid var(--border);
       color:var(--text);
-    }
-
-    .primary-btn:hover,
-    .secondary-btn:hover{
-      transform:translateY(-3px);
-      box-shadow:var(--shadow);
     }
 
     .hero-image{
@@ -207,39 +197,9 @@
       box-shadow:var(--shadow);
     }
 
-    /* TRUST */
-
-    .trust{
-      padding:2rem 0 5rem;
-    }
-
-    .trust-grid{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:1.5rem;
-    }
-
-    .trust-card{
-      background:white;
-      border-radius:var(--radius);
-      padding:2rem;
-      text-align:center;
-      box-shadow:var(--shadow);
-    }
-
-    .trust-card h3{
-      font-size:2rem;
-      color:var(--red);
-      margin-bottom:0.5rem;
-    }
-
-    .trust-card p{
-      color:var(--muted);
-      font-weight:700;
-    }
-
-    /* PRODUCTS */
-
+    /* SECTIONS GENERAL */
+    .products, .testimonials, .cta, .trust { padding: 5rem 0; }
+    
     .section-title{
       text-align:center;
       margin-bottom:3rem;
@@ -252,200 +212,38 @@
       margin-bottom:1rem;
     }
 
-    .section-title p{
-      color:var(--muted);
-      max-width:700px;
-      margin:auto;
-      line-height:1.8;
-    }
-
-    .products{
-      padding:5rem 0;
-    }
-
-    .product-grid{
+    .product-grid, .testimonial-grid, .trust-grid{
       display:grid;
-      grid-template-columns:repeat(3,1fr);
       gap:2rem;
     }
 
-    .product-card{
-      background:white;
-      border-radius:30px;
-      overflow:hidden;
-      box-shadow:var(--shadow);
-      transition:0.3s ease;
-    }
+    .product-grid, .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+    .trust-grid { grid-template-columns: repeat(4, 1fr); }
 
-    .product-card:hover{
-      transform:translateY(-10px);
-    }
-
-    .product-card img{
-      height:260px;
-      width:100%;
-      object-fit:cover;
-    }
-
-    .product-content{
-      padding:1.5rem;
-    }
-
-    .product-content h3{
-      margin-bottom:0.6rem;
-      font-size:1.3rem;
-    }
-
-    .product-content p{
-      color:var(--muted);
-      line-height:1.7;
-      margin-bottom:1rem;
-    }
-
-    .product-footer{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
-
-    .price{
-      font-size:1.3rem;
-      font-weight:900;
-      color:var(--red);
-    }
-
-    .buy-btn{
-      border:none;
-      background:var(--teal);
-      color:white;
-      padding:12px 18px;
-      border-radius:999px;
-      font-weight:800;
-      cursor:pointer;
-    }
-
-    /* TESTIMONIALS */
-
-    .testimonials{
-      padding:5rem 0;
-    }
-
-    .testimonial-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:2rem;
-    }
-
-    .testimonial-card{
+    .trust-card, .product-card, .testimonial-card, .cta-box {
       background:white;
       border-radius:var(--radius);
-      padding:2rem;
       box-shadow:var(--shadow);
     }
 
-    .testimonial-card p{
-      line-height:1.9;
-      color:var(--muted);
-      margin-bottom:1rem;
-    }
+    .product-card { overflow: hidden; transition: 0.3s; }
+    .product-card:hover { transform: translateY(-10px); }
+    .product-card img { height: 260px; width: 100%; object-fit: cover; }
+    .product-content { padding: 1.5rem; }
 
-    .testimonial-user{
-      font-weight:800;
-      color:var(--brown);
-    }
+    .price { font-size: 1.3rem; font-weight: 900; color: var(--red); }
+    .buy-btn { background: var(--teal); color: white; border: none; padding: 10px 15px; border-radius: 20px; cursor: pointer; font-weight: 700; }
 
-    /* CTA */
+    .cta-box { background: linear-gradient(135deg, var(--red), #ff6262); color: white; padding: 4rem; text-align: center; }
+    .cta-box h2 { font-family: 'Fredoka'; font-size: 3rem; margin-bottom: 1rem; }
+    .cta-box button { background: white; color: var(--red); border: none; padding: 15px 30px; border-radius: 30px; font-weight: 800; cursor: pointer; }
 
-    .cta{
-      padding:5rem 0;
-    }
+    footer { padding: 3rem 0; text-align: center; color: var(--muted); }
 
-    .cta-box{
-      background:linear-gradient(135deg,var(--red),#ff6262);
-      border-radius:40px;
-      padding:4rem;
-      text-align:center;
-      color:white;
-      box-shadow:var(--shadow);
-    }
-
-    .cta-box h2{
-      font-family:'Fredoka',sans-serif;
-      font-size:3rem;
-      margin-bottom:1rem;
-    }
-
-    .cta-box p{
-      max-width:700px;
-      margin:auto;
-      line-height:1.9;
-      margin-bottom:2rem;
-      opacity:0.95;
-    }
-
-    .cta-box button{
-      background:white;
-      color:var(--red);
-      border:none;
-      padding:16px 24px;
-      border-radius:999px;
-      font-weight:900;
-      cursor:pointer;
-      font-size:1rem;
-    }
-
-    /* FOOTER */
-
-    footer{
-      padding:3rem 0;
-      text-align:center;
-      color:var(--muted);
-    }
-
-    /* MOBILE */
-
+    /* RESPONSIVE */
     @media(max-width:980px){
-      .hero-grid,
-      .product-grid,
-      .testimonial-grid,
-      .trust-grid{
-        grid-template-columns:1fr;
-      }
-
-      .hero-text h1{
-        font-size:3rem;
-      }
-
-      .floating-badge{
-        left:10px;
-      }
-    }
-
-    @media(max-width:700px){
-      .nav-links{
-        display:none;
-      }
-
-      .hero{
-        padding:3rem 0;
-      }
-
-      .hero-text h1{
-        font-size:2.4rem;
-      }
-
-      .section-title h2,
-      .cta-box h2{
-        font-size:2rem;
-      }
-
-      .cta-box{
-        padding:2rem;
-      }
-
-      .hero-card img{
-        height:360px;
-      }
+      .hero-grid, .product-grid, .testimonial-grid, .trust-grid { grid-template-columns: 1fr; }
+      .hero-text h1 { font-size: 3rem; }
     }
   </style>
 </head>
@@ -456,7 +254,6 @@
       <div class="logo">
         🍰 Celia's Desserts
       </div>
-
       <div class="nav-links">
         <a href="#products">Desserts</a>
         <a href="#reviews">Reviews</a>
@@ -468,19 +265,16 @@
 
   <section class="hero">
     <div class="container hero-grid">
-
       <div class="hero-text">
-        <h1>
+        <h1 data-cms-bind="hero_title">
           Handmade <span>Desserts</span> Crafted With Love
         </h1>
-
-        <p>
+        <p data-cms-bind="hero_sub">
           Fresh cakes, cheesecakes, brownies, cookies and custom desserts made daily using premium ingredients and delivered directly to your door.
         </p>
-
         <div class="hero-actions">
-          <button class="primary-btn">Order Desserts</button>
-          <button class="secondary-btn">Custom Cakes</button>
+          <a href="#products" class="primary-btn" data-cms-bind="btn_main">Order Desserts</a>
+          <a href="#custom" class="secondary-btn" data-cms-bind="btn_sec">Custom Cakes</a>
         </div>
       </div>
 
@@ -488,161 +282,41 @@
         <div class="hero-card">
           <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1200&auto=format&fit=crop" alt="Desserts">
         </div>
-
         <div class="floating-badge">
           ⭐ 4.9 Rating • 500+ Orders
         </div>
       </div>
-
-    </div>
-  </section>
-
-  <section class="trust">
-    <div class="container trust-grid">
-
-      <div class="trust-card">
-        <h3>500+</h3>
-        <p>Orders Delivered</p>
-      </div>
-
-      <div class="trust-card">
-        <h3>4.9★</h3>
-        <p>Average Rating</p>
-      </div>
-
-      <div class="trust-card">
-        <h3>24h</h3>
-        <p>Fast Delivery</p>
-      </div>
-
-      <div class="trust-card">
-        <h3>100%</h3>
-        <p>Fresh Ingredients</p>
-      </div>
-
     </div>
   </section>
 
   <section class="products" id="products">
     <div class="container">
-
       <div class="section-title">
         <h2>Best Selling Desserts</h2>
-        <p>
-          Discover our most loved desserts made fresh every day with premium ingredients and handcrafted decoration.
-        </p>
+        <p>Discover our most loved desserts made fresh every day.</p>
       </div>
 
       <div class="product-grid">
-
         <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop" alt="Chocolate Cake">
-
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop" alt="Cake">
           <div class="product-content">
-            <h3>Chocolate Dream Cake</h3>
-            <p>
-              Rich chocolate layers with premium cocoa frosting and fresh strawberries.
-            </p>
-
+            <h3>Chocolate Dream</h3>
             <div class="product-footer">
               <span class="price">$28</span>
-              <button class="buy-btn">Add to Cart</button>
+              <button class="buy-btn">Add</button>
             </div>
           </div>
         </div>
-
-        <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop" alt="Cheesecake">
-
-          <div class="product-content">
-            <h3>Berry Cheesecake</h3>
-            <p>
-              Creamy baked cheesecake topped with mixed berries and homemade sauce.
-            </p>
-
-            <div class="product-footer">
-              <span class="price">$24</span>
-              <button class="buy-btn">Add to Cart</button>
-            </div>
-          </div>
         </div>
-
-        <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1519869325930-281384150729?q=80&w=1200&auto=format&fit=crop" alt="Cookies">
-
-          <div class="product-content">
-            <h3>Signature Cookies</h3>
-            <p>
-              Soft baked cookies with chocolate chips and caramel filling.
-            </p>
-
-            <div class="product-footer">
-              <span class="price">$16</span>
-              <button class="buy-btn">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonials" id="reviews">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Customer Reviews</h2>
-        <p>
-          Customers love the freshness, flavor and presentation of every dessert we make.
-        </p>
-      </div>
-
-      <div class="testimonial-grid">
-
-        <div class="testimonial-card">
-          <p>
-            “Absolutely the best cheesecake I’ve had in years. Beautiful presentation and incredible flavor.”
-          </p>
-
-          <div class="testimonial-user">
-            — Sarah M.
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <p>
-            “The custom birthday cake exceeded expectations. Everyone at the party loved it.”
-          </p>
-
-          <div class="testimonial-user">
-            — Daniel R.
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <p>
-            “Fast delivery, fresh desserts and amazing customer service. Highly recommended.”
-          </p>
-
-          <div class="testimonial-user">
-            — Emily T.
-          </div>
-        </div>
-
-      </div>
     </div>
   </section>
 
   <section class="cta" id="custom">
     <div class="container">
       <div class="cta-box">
-        <h2>Need a Custom Cake?</h2>
-
-        <p>
-          Weddings, birthdays, corporate events or special occasions — we create custom dessert experiences tailored to your vision.
-        </p>
-
-        <button>Request Custom Order</button>
+        <h2 data-cms-bind="cta_title">Need a Custom Cake?</h2>
+        <p data-cms-bind="cta_desc">Weddings, birthdays or special occasions — we create custom dessert experiences.</p>
+        <button data-cms-bind="cta_btn">Request Custom Order</button>
       </div>
     </div>
   </section>
