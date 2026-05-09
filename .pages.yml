@@ -1,9 +1,0 @@
-content:
-  - name: "Editar Inicio"
-    type: "single"
-    path: "index.html"
-    fields:
-      - { name: "hero_title", label: "Título Principal", type: "string" }
-      - { name: "hero_sub", label: "Descripción", type: "text" }
-      - { name: "btn_main", label: "Texto Botón Rojo", type: "string" }
-      - { name: "btn_sec", label: "Texto Botón Blanco", type: "string" }
